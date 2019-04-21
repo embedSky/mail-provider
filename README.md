@@ -46,7 +46,10 @@ go get ./...
 ## 使用方法
 启动之后使用以下命令测试：
 ```
+#测试发送邮件
 curl http://127.0.0.1:4000/sender/mail -d "tos=a@a.com,b@b.com&subject=xx&content=yy"
+#测试发送短信
+curl http://127.0.0.1:4000/sender/sms -d "tos=18672740522,13656675237&content=二合一测试"
 ```
 是否能收到邮件，如收到邮件，表示配置成功，如未收到邮件，使用
 ```bash
