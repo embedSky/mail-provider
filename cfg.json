@@ -1,7 +1,7 @@
 {
     "debug": true,
     "http": {
-        "listen": "0.0.0.0:4000",
+        "listen": "0.0.0.0:4001",
         "token": ""
     },
     "smtp": {
@@ -12,5 +12,11 @@
         "tls":false,
         "anonymous":false,
         "skipVerify":true
+    },
+    "sms": {
+        "signName":"萤火运维",
+        "templateCode":"",
+        "accessKeyId":"",
+        "accessKeySecret":""
     }
 }

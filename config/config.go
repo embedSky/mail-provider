@@ -24,10 +24,18 @@ type SmtpConfig struct {
 	SkipVerify bool   `json:"skipVerify"`
 }
 
+type SmsConfig struct {
+	SignName        string `json:"signName"`
+	TemplateCode    string `json:"templateCode"`
+	AccessKeyId     string `json:"accessKeyId"`
+	AccessKeySecret string `json:"accessKeySecret"`
+}
+
 type GlobalConfig struct {
 	Debug bool        `json:"debug"`
 	Http  *HttpConfig `json:"http"`
 	Smtp  *SmtpConfig `json:"smtp"`
+	Sms   *SmsConfig  `json:"sms`
 }
 
 var (
